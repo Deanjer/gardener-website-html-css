@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.projects{
+    height: 500px;
+    width: 500px;
+    background-color: #7EA310;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1040px;
+    justify-content: center;
+}
+.img{
+    height: 300px;
+    border-radius: 10px;
+}
+#maincontainer{ 
+    display: flex;
+    justify-content: center;
+}
+.emptyspace{
+    width: 20%;
+}
+
+/* @media only screen and (max-width: 200px) {
+    #flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 520px;
+        justify-content: center;
+    }
+} */
