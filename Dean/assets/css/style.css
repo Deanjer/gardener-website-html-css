@@ -18,6 +18,7 @@
     height: 95px;
     vertical-align: middle;
     /* margin-top: -17px; */ 
+    margin-left: 25px;
 }
 .header ul{
     /* display: inline-block; */
@@ -38,10 +39,76 @@
 }
 .header a{
     color: white;
-    text-decoration: none;  
-    
+    text-decoration: none;    
 }
 .headerimg{
     width: 100%;
-  
+}
+.inleiding{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.left{
+    width: 50%;
+    height: auto;
+}
+.right{
+    width: 50%;
+    height: 300px;
+}
+.wrapper{
+    width: 80%;
+    margin-top: 50px;
+   
+}
+.inleiding-container{
+    display:flex;
+    justify-content: center;
+}
+.inleiding-img{
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 1024px){
+    .left{
+        width: 95%;
+        height: auto;
+        order: 2;
+        margin-left: 20px;
+        margin-top: 20px;
+    } 
+    .right{
+        width: 100%;
+        min-height: 300px;
+        height: auto ;
+        order: 1;
+        text-align: center;
+    }
+    .wrapper{
+        width: 100%;
+        margin-top: 50px;
+        
+    }
+    .inleiding{
+        /* display: block; */
+        flex-direction:column;
+        
+    }
+    /* .inleiding-img{
+        width: 80%;
+        height: auto;
+        
+    } */
+}
+@media only screen and (max-width: 450px){
+/*     
+    .inleiding-img{
+        width: 100%;
+        height: auto;
+        
+    } */
+    .left{
+        margin-top: -40px;
+    }
 }
