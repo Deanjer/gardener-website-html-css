@@ -200,3 +200,45 @@
     cursor: pointer;
     background-color: #dfe667;
 }
+.projects{
+    width: 100%;
+    height: auto;
+}
+.card{
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    height: 550px;
+    background-color: rgba(160, 159, 159, 0.208);
+    /* margin-right: 20px; */
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.omgeving{
+    width: 100%;
+    height: auto;
+    background-color:  #00000008;
+    display: flex;
+    justify-content: center;
+}
+.left-omgeving{
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.right-omgeving{
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.img-omgeving{
+    margin-left: 20px;
+}
+.contact a p{
+    color: white;
+}
