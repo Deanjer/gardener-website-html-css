@@ -73,6 +73,7 @@
     height: 300px;
     margin-left: 20px;
 }
+/* max-width 1024px */
 @media only screen and (max-width: 1024px){
     .left{
         width: 95%;
@@ -103,11 +104,27 @@
         height: 600px;
         margin-left: 0px;
     }
+    .left-main{
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
+    }
+    .right-main{
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
+    }
+    .main{
+        background-color: #00000008;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
 }
-
+/* max-width 450px */
 @media only screen and (max-width: 450px){
     .left{
-        margin-top: -40px;
+        margin-top: 0px;
     }
     .inleiding-img{
         width: 100%;
@@ -116,12 +133,7 @@
     }
 }
 /* main */
-.main{
-    background-color: #00000008;
-    height: 600px;
-    width: 100%;
-    margin-top: 10px ;
-}
+
 .footer{
     width: 100%;
     height: 250px;
@@ -153,5 +165,38 @@
 }
 .contact h2{
     color: white;
-    
+
+}
+.left-main{
+    width: 40%;
+    height: 200px;
+    margin-top: 25px;
+}
+.right-main{
+    width: 40%;
+    height: 200px;
+    margin-top: 25px;
+}
+.right-container{
+    margin-left: 20px;
+}
+.main{
+    background-color: #00000008;
+    height: 400px;
+    width: 100%;
+    margin-top: 10px ;
+    display: flex;
+    justify-content: center;
+}
+.contact-img{
+    width: 50%;
+}
+.contact-button{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border:  none;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #dfe667;
 }
