@@ -1,0 +1,40 @@
+#tittle {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kaartje {
+border: 1px solid black;
+height: 500px;
+width: 500px;
+background-color: lime;
+
+}
+
+#contactform {
+border: 1px solid black;
+height: 500px;
+width: 800px;
+background-color: green;
+
+}
+
+.icons{
+    display: flex;
+    background-color: aqua;
+}
+.text {
+    background-color: lightblue;
+}
+
+.text p {
+    margin: 0;
+    padding: 8px;
+}
