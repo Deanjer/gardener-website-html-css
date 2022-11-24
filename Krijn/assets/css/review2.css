@@ -50,11 +50,12 @@
 .card {
     margin: auto;
     width: 100%;
-    max-width: 2000px;
+    max-width: 2023px;
     margin-top: 15px;
     border-radius: 25px;
     height: 250px;
     border: 1px solid #000;
+    position: absolute;
 }
 
 #yes {
@@ -68,10 +69,17 @@
 }
 
     .cards {
-        margin-top: 10px;
+        margin: auto;
         border-radius: 10px;
-        margin-bottom: 10px;
         width: 25%;
         height: 550px;
         background-color: rgba(160, 159, 159, 0.208);
+}
+
+.size {
+    font-size: 25px;
+}
+
+.sizze {
+    font-size: 40px;
 }
