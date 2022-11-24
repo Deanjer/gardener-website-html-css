@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+/*header*/
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #20525c;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    width: 95px;
+    height: 95px;
+    vertical-align: middle;
+    /* margin-top: -17px; */ 
+}
+.header ul{
+    /* display: inline-block; */
+    display: flex;
+    margin-right: 30px;
+}
+.header li{
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.header li:hover{
+   transform: scale(1.05);
+   text-decoration: underline;
+}
+.header a{
+    color: white;
+    text-decoration: none;  
+    
+}
+.headerimg{
+    width: 100%;
+  
+}
+
+/*end header*/
+
+.hiddentextside{
+    background-color: aqua;
+}
+.hiddentextlower{
+    background-color: aqua;
+}
+.projects{
+    height: 40%;
+    width: 40%;
+    background-color: #7EA310;
+    border-radius: 10px;
+    margin: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;    */
+}
+
+#flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 2080px;
+    height: 2080px;
+    justify-content: center;
+}
+
+.flexinflex{
+    width: 100%;
+    height: 40%;
+    display: flex;
+
+}
+
+.flexinflex2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.textupper{
+    margin: 30px;
+    background-color: #dfe667;
+    height: 81%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.textlower{
+    margin: 30px;
+    background-color: #dfe667;
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.img{
+    margin: 30px;
+    height: 85%;
+    border-radius: 10px;
+}
+
+#maincontainer{ 
+    display: flex;
+    justify-content: center;
+}
+/* .emptyspace{
+    width: 20%;
+} */
+
+/* @media only screen and (max-width: 200px) {
+    #flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 520px;
+        justify-content: center;
+    }
+} */

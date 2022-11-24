@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto:ital@1&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48;
+   color: white;
+   margin-bottom: 15px;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -147,7 +159,7 @@
     
 }
 .nav h2{
-    color: white;
+    color: #54c2cc;
 }
 .nav{
     margin-left: 20px;
@@ -157,16 +169,7 @@
 .nav a:hover{
     text-decoration: underline;
 }
-.footer{
-    display: flex;
-}
-.contact{
-    margin-top: 20px;
-}
-.contact h2{
-    color: white;
 
-}
 .left-main{
     width: 40%;
     height: 200px;
@@ -239,6 +242,35 @@
 .img-omgeving{
     margin-left: 20px;
 }
-.contact a p{
+.contact p, a{
     color: white;
+    text-decoration: none;
+    /* margin-top:20px; */
+    line-height: 50px;
+    cursor: pointer;
+}
+/* .contact a:hover{
+    text-decoration: underline;  
+}
+.contact p:hover{
+    text-decoration: underline;  
+} */
+.footer{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.contact{
+    margin-top: 20px;
+}
+.contact h2{
+    color:  #54c2cc;
+
+}
+.contact-icons{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.contact-titles{
+    font-size: 25px;
 }
