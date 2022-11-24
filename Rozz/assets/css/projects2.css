@@ -54,7 +54,12 @@
 
 /*end header*/
 
-
+.hiddentextside{
+    background-color: aqua;
+}
+.hiddentextlower{
+    background-color: aqua;
+}
 .projects{
     height: 40%;
     width: 40%;
