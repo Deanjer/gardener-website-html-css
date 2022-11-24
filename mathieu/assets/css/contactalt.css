@@ -38,3 +38,22 @@ background-color: green;
     margin: 0;
     padding: 8px;
 }
+
+#namemail {
+    display: flex;
+}
+#naame {
+    height: 100px;
+    width: 300px;
+}
+#achtername {
+    height: 100px;
+    width: 300px;
+}
+#emaile {
+    height: 100px;
+}
+#boxes {
+    padding: 30px;
+    margin: 20px 0;
+}

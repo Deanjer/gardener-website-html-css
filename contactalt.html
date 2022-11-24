@@ -56,17 +56,28 @@
                 </div>
             </div>  
             <div id="contactform">
-                <form action="">
-                    <label for="voornaam">Voornaam:</label>
-                    <input type="text" id="vnaam" name="voornaam">
-                    <label for="achternaam">Achternaam:</label>
-                    <input type="text" id="anaam" name="achternaam"><br>
-                    <label for="onderwerp">Onderwerp:</label><br>
-                    <input type="text" id="onderwerp" name="onderwerp"><br>
-                    <label for="bericht">bericht:</label><br>
-                    <textarea id="bericht" name="bericht"></textarea>
-
-                </form>
+                <div id="boxes">
+                    <form action="">
+                        <div id="namemail">
+                            <div id="naame">
+                                <label for="naam">Naam:</label><br>
+                                <input type="text" id="naam" name="voornaam">
+                            </div>
+                            <div id="achtername">
+                                <label for="achternaam">Achternaam:</label><br>
+                                <input type="text" id="anaam" name="achternaam">
+                            </div>
+                        </div>
+                        <div id="emaile">
+                            <label for="onderwerp">Email:</label><br>
+                            <input type="email" id="onderwerp" name="onderwerp">
+                        </div>
+                        <div id="berichte">
+                        <label for="bericht">bericht:</label><br>
+                        <textarea id="bericht" name="bericht"></textarea>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
