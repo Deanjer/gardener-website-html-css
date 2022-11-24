@@ -18,6 +18,7 @@
     height: 95px;
     vertical-align: middle;
     /* margin-top: -17px; */ 
+    margin-left: 25px;
 }
 .header ul{
     /* display: inline-block; */
@@ -38,10 +39,206 @@
 }
 .header a{
     color: white;
-    text-decoration: none;  
-    
+    text-decoration: none;    
 }
 .headerimg{
     width: 100%;
-  
+    height: 250px;
+    object-fit: cover
+}
+.inleiding{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.left{
+    width: 50%;
+    height: auto;
+}
+.right{
+    width: 50%;
+    height: 300px;
+}
+.wrapper{
+    width: 80%;
+    margin-top: 50px;
+   
+}
+.inleiding-container{
+    display:flex;
+    justify-content: center;
+}
+.inleiding-img{
+    width: 70%;
+    height: 300px;
+    margin-left: 20px;
+}
+/* max-width 1024px */
+@media only screen and (max-width: 1024px){
+    .left{
+        width: 95%;
+        height: auto;
+        order: 2;
+        margin-left: 20px;
+        margin-top: 20px;
+    } 
+    .right{
+        width: 100%;
+        min-height: 300px;
+        height: auto ;
+        order: 1;
+        text-align: center;
+    }
+    .wrapper{
+        width: 100%;
+        margin-top: 50px;
+        
+    }
+    .inleiding{
+        /* display: block; */
+        flex-direction:column;
+        
+    }
+    .inleiding-img{
+        width: 100%;
+        height: 600px;
+        margin-left: 0px;
+    }
+    .left-main{
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
+    }
+    .right-main{
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
+    }
+    .main{
+        background-color: #00000008;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+/* max-width 450px */
+@media only screen and (max-width: 450px){
+    .left{
+        margin-top: 0px;
+    }
+    .inleiding-img{
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+}
+/* main */
+
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(81, 81, 85);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    
+}
+.nav h2{
+    color: white;
+}
+.nav{
+    margin-left: 20px;
+    padding: 20px;
+    width: 20%;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+}
+.contact{
+    margin-top: 20px;
+}
+.contact h2{
+    color: white;
+
+}
+.left-main{
+    width: 40%;
+    height: 200px;
+    margin-top: 25px;
+}
+.right-main{
+    width: 40%;
+    height: 200px;
+    margin-top: 25px;
+}
+.right-container{
+    margin-left: 20px;
+}
+.main{
+    background-color: #00000008;
+    height: 400px;
+    width: 100%;
+    margin-top: 10px ;
+    display: flex;
+    justify-content: center;
+}
+.contact-img{
+    width: 50%;
+}
+.contact-button{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border:  none;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #dfe667;
+}
+.projects{
+    width: 100%;
+    height: auto;
+}
+.card{
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    height: 550px;
+    background-color: rgba(160, 159, 159, 0.208);
+    /* margin-right: 20px; */
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.omgeving{
+    width: 100%;
+    height: auto;
+    background-color:  #00000008;
+    display: flex;
+    justify-content: center;
+}
+.left-omgeving{
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.right-omgeving{
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.img-omgeving{
+    margin-left: 20px;
+}
+.contact a p{
+    color: white;
 }

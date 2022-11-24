@@ -1,1 +1,60 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mathieu/assets/css/contact.css">
+    <title>Contact formulier</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Uw naam:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="naam" name="volegdige naam" placeholder="Uw naam..." min="1" max="64">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="gmail">Email:</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="gmail" name="gmailadress" placeholder="Uw Email..." required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" min="1" max="64">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="telefoon">Uw telefoon nummer:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="telefoon" name="telefoon nummer" placeholder="Uw telefoon nummer..." pattern="[0-9]+" min="10" max="10">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="adres">Uw adress:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="adress" name="adress gegevens" placeholder="Uw adress..." min="1" max="64">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="bericht">Bericht:</label>
+            </div>
+            <div class="col-75">
+              <textarea id="bericht" name="bericht" placeholder="Uw bericht..." style="height:200px" minlength="1" maxlength="4000"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Verstuuren">
+          </div>
+        </form>
+      </div>    
+
+</body>
+</html>
