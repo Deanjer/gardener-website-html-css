@@ -1,5 +1,5 @@
 body {
-	background: #1d1c2d;
+	background: #54c2cc;
 	font-family: "Mulish", sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
 	.card {
 		width: 578px;
 		height: 920px;
-		background: #222033;
+		background: #213502;
 		border-radius: 10px;
 		box-sizing: border-box;
 		padding: 30px;
@@ -40,7 +40,7 @@ body {
 			input[type="text"] {
 				width: 450px;
 				height: 70px;
-				background: #262538;
+				background: #20525c;
 				border: 1px solid #49485d;
 				border-radius: 10px;
 				margin: 18px 0px;
@@ -68,7 +68,7 @@ body {
             }
 				.tag {
 					display: inline-flex;
-					background: #1d1c2d;
+					background: #20525c;
 					color: #8c8aa7;
 					border-radius: 5px;
 					padding: 12px;
@@ -93,7 +93,7 @@ body {
 				justify-content: space-around;
 				width: 450px;
 				height: 250px;
-				background: #2c2b3f;
+				background:  #54c2cc;
 				border-radius: 10px;
 				margin: 10px 0px;
             }
