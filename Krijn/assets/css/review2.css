@@ -57,15 +57,21 @@
     border: 1px solid #000;
 }
 
-.cards {
-    margin: auto;
+#yes {
     width: 100%;
-    max-width: 500px;
-    border-radius: 25px;
-    height: 250px;
-    border: 1px solid #000;
-    .cards{
-        display: flex;
-        justify-content: space-around;
-    }
+    height: auto;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+    .cards {
+        margin-top: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 25%;
+        height: 550px;
+        background-color: rgba(160, 159, 159, 0.208);
 }
