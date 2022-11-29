@@ -12,26 +12,28 @@
 
 #kaartje {
 border: 1px solid black;
-height: 500px;
-width: 500px;
-background-color: lime;
+height: 480px;
+width: 485px;
+background-color: #20525c;
+padding: 10px;
+color: white;
 
 }
 
 #contactform {
-border: 1px solid black;
+/* border: 1px solid black; */
 height: 500px;
 width: 800px;
-background-color: green;
+
 
 }
 
 .icons{
     display: flex;
-    background-color: aqua;
+   
 }
 .text {
-    background-color: lightblue;
+  
 }
 
 .text p {
@@ -56,4 +58,18 @@ background-color: green;
 #boxes {
     padding: 30px;
     margin: 20px 0;
+}
+#naam {
+    width: 90%;
+}
+#anaam {
+    width: 100%;
+}
+#onderwerp {
+    width: 90%;
+    height: 50px;
+}
+#bericht {
+    width: 90%;
+    height: 100px;
 }
