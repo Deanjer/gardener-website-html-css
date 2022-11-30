@@ -33,6 +33,8 @@ function gone1(){
     else{
         document.getElementById('number1').style.height = "1000px";
         document.getElementById('number1').style.width = "1000px";
+        document.getElementById('number1').style.
+
     }
 
     // if (document.getElementById('number1').style.justifyContent == "flex-start"){
@@ -44,11 +46,6 @@ function gone1(){
     //     document.getElementById('number1').style.alignItems = "flex-start";
     //}
 
-    if (document.getElementById("img1").style.height == "50%"){
-        document.getElementById("img1").style.height = "100%";
-    }else{
-        document.getElementById("img1").style.height = "50%";
-    }
 
 };
 function gone2(){
@@ -59,17 +56,19 @@ function gone2(){
     toggleText(document.getElementById("hidden3"));
     toggleText(document.getElementById("hidden4"));
 
-    if (document.getElementById('number2').style.height == "1000px"){
-        document.getElementById('number2').style.height = "500px";
-        document.getElementById('number2').style.width = "250px";
+    if (document.getElementById('number3').style.height == "1000px"){
+        document.getElementById('number3').style.height = "500px";
+        document.getElementById('number3').style.width = "250px";
     }else{
-        document.getElementById('number2').style.height = "1000px";
-        document.getElementById('number2').style.width = "1000px";
+        document.getElementById('number3').style.height = "1000px";
+        document.getElementById('number3').style.width = "1000px";
     }
-    if(document.getElementById('hidden2').style.height == "90%"){
-        document.getElementById('hidden2').style.height = "0%";
+    if(document.getElementById('hidden3').style.height == "90%"){
+        document.getElementById('hidden3').style.height = "0%";
+        document.getElementById('hidden3').style.width = "0%";
     }else{
         document.getElementById('hidden2').style.height = "90%";
+        document.getElementById('hidden2').style.width = "90%";
     }
     // if (document.getElementById('number2').style.justifyContent == "flex-start"){
     //     document.getElementById('number2').style.justifyContent = "center";
@@ -79,11 +78,7 @@ function gone2(){
     //     document.getElementById('number2').style.justifyContent = "flex-start";
     //     document.getElementById('number2').style.alignItems = "flex-start";
     // }
-    if (document.getElementById("img2").style.height == "50%"){
-        document.getElementById("img2").style.height = "100%";
-    }else{
-        document.getElementById("img2").style.height = "50%";
-    }
+
 };
 function gone3(){
     toggleDisplay(document.getElementById("number1"));
@@ -102,8 +97,10 @@ function gone3(){
     }
     if(document.getElementById('hidden3').style.height == "90%"){
         document.getElementById('hidden3').style.height = "0%";
+        document.getElementById('hidden3').style.width = "0%";
     }else{
         document.getElementById('hidden3').style.height = "90%";
+        document.getElementById('hidden3').style.width = "90%";
     }
     // if (document.getElementById('number3').style.justifyContent == "flex-start"){
     //     document.getElementById('number3').style.justifyContent = "center";
@@ -113,11 +110,7 @@ function gone3(){
     //     document.getElementById('number3').style.justifyContent = "flex-start";
     //     document.getElementById('number3').style.alignItems = "flex-start";
     // }
-    if (document.getElementById("img3").style.height == "50%"){
-        document.getElementById("img3").style.height = "100%";
-    }else{
-        document.getElementById("img3").style.height = "50%";
-    }
+  
 };
 function gone4(){
     toggleDisplay(document.getElementById("number1"));
@@ -136,8 +129,10 @@ function gone4(){
     }
     if(document.getElementById('hidden4').style.height == "90%"){
         document.getElementById('hidden4').style.height = "0%";
+        document.getElementById('hidden4').style.width = "0%";
     }else{
         document.getElementById('hidden4').style.height = "90%";
+        document.getElementById('hidden4').style.width = "90%";
     }
     // if (document.getElementById('number4').style.justifyContent == "flex-start"){
     //     document.getElementById('number4').style.justifyContent = "center";
@@ -148,11 +143,7 @@ function gone4(){
     //     document.getElementById('number4').style.alignItems = "flex-start";
     // }
 
-    if (document.getElementById("img4").style.height == "50%"){
-        document.getElementById("img4").style.height = "100%";
-    }else{
-        document.getElementById("img4").style.height = "50%";
-    }
+
 };
 
 

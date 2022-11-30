@@ -1,0 +1,36 @@
+#main{
+    background-color:#7EA310;
+    height: 1000px;
+    width: 1000px;
+}
+
+#img{
+    border-radius: 10px;
+    height: 94%;
+    width: 40%;
+    margin: 2%;
+}
+
+#flexcontainer{
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+
+#side{
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    width: 52%;
+    height: 86%;
+    background-color: #dfe667;
+}
+
+#below{
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    width: 92%;
+    height: 52%;
+    background-color: #dfe667;
+}
