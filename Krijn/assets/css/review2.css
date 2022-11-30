@@ -99,106 +99,6 @@
     margin-left: 20px;
 }
 
-/* max-width 1024px */
-@media only screen and (max-width: 1024px) {
-    .left {
-        width: 95%;
-        height: auto;
-        order: 2;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-
-    .right {
-        width: 100%;
-        min-height: 300px;
-        height: auto;
-        order: 1;
-        text-align: center;
-    }
-
-    .wrapper {
-        width: 100%;
-        margin-top: 50px;
-
-    }
-
-    .inleiding {
-        /* display: block; */
-        flex-direction: column;
-
-    }
-
-    .inleiding-img {
-        width: 100%;
-        height: 600px;
-        margin-left: 0px;
-    }
-
-    /* .left-main {
-        width: 100%;
-        height: 200px;
-        margin-top: 25px;
-    }
-
-    .right-main {
-        width: 100%;
-        height: 200px;
-        margin-top: 25px;
-    }
-
-    .main {
-        background-color: #00000008;
-        height: auto;
-        width: 100%;
-        flex-direction: column;
-    } */
-
-    /* main */
-    .left-main {
-        width: calc(100%-20px);
-        height: 200px;
-        margin-top: 25px;
-    }
-
-    .right-container {
-        width: calc(100%-20px);
-        ;
-    }
-
-    .right-main {
-        width: calc(100%-20px);
-        height: 200px;
-        margin-top: 25px;
-    }
-
-    .right-container {
-        margin-left: 20px;
-        width: calc(100%-20px);
-    }
-
-    .main {
-        display: flex;
-        /* justify-content: center; */
-        width: 100%;
-    }
-}
-
-/* max-width 450px */
-@media only screen and (max-width: 450px) {
-    .left {
-        margin-top: 0px;
-    }
-
-    .inleiding-img {
-        width: 100%;
-        height: 300px;
-        margin-left: 0px;
-    }
-}
-
-/* main */
-
 .footer {
     width: 100%;
     height: 250px;
@@ -286,6 +186,10 @@
     justify-content: space-around;
 }
 
+.photo {
+    justify-content: center;
+}
+
 .omgeving {
     width: 100%;
     height: auto;
@@ -293,6 +197,8 @@
     display: flex;
     justify-content: center;
 }
+
+
 
 .left-omgeving {
     width: 40%;
@@ -450,54 +356,8 @@ body {
     transform: rotate(-405deg);
 }
 
-@media only screen and (max-width: 700px) {
-    .menu-button-container {
-        display: flex;
-    }
-
-    .menu {
-        position: absolute;
-        top: 0;
-        margin-top: 50px;
-        left: 0;
+@media screen and (max-width: 600px) {
+    .cards {
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
     }
-
-    #menu-toggle~.menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    #menu-toggle:checked~.menu li {
-        border: 1px solid #333;
-        height: 2.5em;
-        padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    .menu>li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: white;
-        background-color: #222;
-    }
-
-    .menu>li:not(:last-child) {
-        border-bottom: 1px solid #444;
-    }
-
-}
-
-.logo-head {
-    width: 80px;
-    height: 80px;
 }
