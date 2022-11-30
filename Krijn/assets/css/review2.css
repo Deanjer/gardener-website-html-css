@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto:ital@1&display=swap");
 
 .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 700,
-        'GRAD' 0,
-        'opsz' 48;
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
     color: white;
     margin-bottom: 15px;
 }
 
-
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 .header {
@@ -60,10 +55,15 @@
     text-decoration: none;
 }
 
+.menu li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .headerimg {
     width: 100%;
     height: 250px;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .inleiding {
@@ -85,7 +85,6 @@
 .wrapper {
     width: 80%;
     margin-top: 50px;
-
 }
 
 .inleiding-container {
@@ -99,6 +98,8 @@
     margin-left: 20px;
 }
 
+
+
 .footer {
     width: 100%;
     height: 250px;
@@ -110,7 +111,6 @@
     text-decoration: none;
     display: block;
     line-height: 50px;
-
 }
 
 .nav h2 {
@@ -129,7 +129,7 @@
 
 .left-main {
     width: 40%;
-    height: 200px;
+    /* height: 200px; */
     margin-top: 25px;
 }
 
@@ -153,7 +153,7 @@
 }
 
 .contact-img {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .contact-button {
@@ -186,10 +186,6 @@
     justify-content: space-around;
 }
 
-.photo {
-    justify-content: center;
-}
-
 .omgeving {
     width: 100%;
     height: auto;
@@ -197,8 +193,6 @@
     display: flex;
     justify-content: center;
 }
-
-
 
 .left-omgeving {
     width: 40%;
@@ -245,11 +239,10 @@ a {
 
 .contact h2 {
     color: #54c2cc;
-
 }
 
 .contact-icons {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
 }
 
@@ -275,10 +268,7 @@ h2 {
 html,
 body {
     margin: 0;
-
 }
-
-
 
 .top-nav {
     display: flex;
@@ -288,7 +278,7 @@ body {
     background-color: #20525c;
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
+    color: #fff;
     height: 80px;
     padding: 1em;
 }
@@ -356,8 +346,204 @@ body {
     transform: rotate(-405deg);
 }
 
-@media screen and (max-width: 600px) {
-    .cards {
+.left-container {}
+
+.logo-head {
+    width: 80px;
+    height: 80px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .left {
+        width: 95%;
+        height: auto;
+        order: 2;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .right {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        order: 1;
+        text-align: center;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .inleiding {
+        /* display: block; */
         flex-direction: column;
     }
+
+    .inleiding-img {
+        width: 100%;
+        height: 600px;
+        margin-left: 0px;
+    }
+
+    /* .left-main {
+          width: 100%;
+          height: 200px;
+          margin-top: 25px;
+      }
+  
+      .right-main {
+          width: 100%;
+          height: 200px;
+          margin-top: 25px;
+      }
+  
+      .main {
+          background-color: #00000008;
+          height: auto;
+          width: 100%;
+          flex-direction: column;
+      } */
+
+    /* main */
+    .contact-img {
+        width: 100%;
+        margin-bottom: 200px;
+        height: auto;
+        
+    } 
+    .left-main {
+        width: calc(50% - 20px);
+        height: 200px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    .left-container {
+        width: calc(100% - 20px);
+    }
+
+    .right-container {
+        width: calc(100% - 20px);
+    }
+
+    .right-main {
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
+    }
+
+    .right-container {
+        margin-left: 20px;
+        width: calc(100% - 20px);
+        margin-left: 20px;
+
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
 }
+@media only screen and (max-width: 950px) {
+    
+    /* .contact-img {
+        width: 100%;
+    } 
+
+    .right-container {
+        width: calc(100% - 20px);
+    }
+
+    .right-main {
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
+    }
+
+    .right-container {
+        margin-left: 20px;
+        width: calc(100% - 20px);
+        margin-left: 20px;
+
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    } */
+}
+
+@media only screen and (max-width: 700px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 365px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        border: 1px solid #20525c;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #20525c;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* max-width 450px */
+@media only screen and (max-width: 450px) {
+    .left {
+        margin-top: 0px;
+    }
+
+    .inleiding-img {
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+}
+
