@@ -452,7 +452,7 @@ body {
         width: 100%;
     }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 750px) {
     
     /* .contact-img {
         width: 100%;
@@ -486,6 +486,17 @@ body {
 
         width: 100%;
     } */
+    .cards {
+        flex-direction: column;
+        width: 100%;
+        max-width: 20300px;
+        margin: auto;
+    }
+    .card {
+        width: 100%;
+        max-height: 500px;
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
