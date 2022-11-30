@@ -56,7 +56,7 @@
 
 .projects{
     height: 500px;
-    width: 500px;
+    width: 250px;
     background-color: #7EA310;
     border-radius: 10px;
     margin: 10px;
@@ -68,7 +68,7 @@
 #flexcontainer{
     display: flex;
     flex-wrap: wrap;
-    width: 1040px;
+    width: 1080px;
     justify-content: center;
 }
 #maincontainer{ 
@@ -175,12 +175,12 @@
 
 #img1{
     border-radius: 10px;
-    height: 200%;
+    height: 100%;
     margin: 5%;
 }
 #img2{
     border-radius: 10px;
-    height: 200%;
+    height: 100%;
     margin: 5%;
 }
 #img3{
@@ -202,6 +202,14 @@
     display: flex;
     justify-content: center;
     height: 66%;
+}
+.show{
+    height:100%;
+    width: 100%;
+    background-color: #dfe667;
+    margin: 3.5%;
+    padding: 1%;
+    border-radius: 10px;
 }
 /* .flexinflexinflex{
     display: flex;
