@@ -58,6 +58,10 @@ body{
 	
 	text-align:center;
   }
+
+  .slide img {
+	width: 100%;
+  }
   .dot{
 	display:inline-block;
 	/* background:grey; */
