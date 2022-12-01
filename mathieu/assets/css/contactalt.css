@@ -126,4 +126,69 @@ width: 40%;
         width: 100%;
     }
 }
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #20525c;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
 
+}
+.nav-footer a:hover{
+    text-decoration: underline;
+}
+.nav-footer p{
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+}
+.h-contact{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+ }
+.nav-footer{
+ width: 30%;
+ margin-top: 15px;
+}
+.contact-footer{
+ width: 30%;
+ margin-top: 15px;
+ margin-bottom: 15px;
+ white-space: normal;
+}
+.logo-footer{
+ width: 30%;
+ margin-top: 15px;
+}
+.tekst-contact{
+    color: white;
+    white-space: normal;
+}
+.logo-footer-img{
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 835px) {
+    .footer-wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .contact-footer{
+        order: 3;
+        margin-left: 30px;
+       }
+       .nav-footer{
+        order: 2;
+        margin-left: 30px;
+       }
+       .logo-footer{
+        order: 1;
+        margin-left: 30px;
+       }
+}
