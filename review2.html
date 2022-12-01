@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Review page</title>
     <link rel="stylesheet" href="Krijn/assets/css/review2.css" />
+    <!-- <link rel="stylesheet" href="Dean/assets/css/style.css"> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -20,37 +21,13 @@
               <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
           </head>
           <body>
-       <!--Slider-->
-       <div id="slider">  
-          <div class="slide" style="background:dodgerBlue;">
-            <img src="Krijn/assets/img/photo7.jpg" >
-          </div>
-          
-          <div class="slide" style="background:coral;">
-             <img src="Krijn/assets/img/photo11.jpg" >
-          </div>
-         
-          <div class="slide" style="background:crimson;">
-            <img src="Krijn/assets/img/photo12.jpg" >
-          </div>
-          
-          <div class="slide" style="background: #6edf10;">
-            <img src="Krijn/assets/img/photo13.jpg" >
-          </div>
-          
-          <!--Controlling arrows-->
-          <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><span class="material-symbols-outlined">
-            arrow_back
-            </span><i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </span>
-          <span class="controls" id="right-arrow" onclick="nextSlide(1)"><span class="material-symbols-outlined">
-            arrow_forward
-            </span><i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </span>
-        </div>
-          <div id="dots-con">
-         <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-         </div>  
+            <div>
+              <img
+                class="headerimg"
+                src="Dean/assets/images/a8db60_9f168361c12f4ad5800e1acf22f49080_mv2.jpeg"
+                alt=""
+              />
+            </div>
       </div>
       <section class="top-nav">
         <div>
@@ -66,7 +43,7 @@
         </label>
         <ul class="menu">
           <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-          <li><a href="http://127.0.0.1:5500/projects.html">Projects</a></li>
+          <li><a href="http://127.0.0.1:5500/projects3.html">Projects</a></li>
           <li><a href="http://127.0.0.1:5500/contactalt.html">Contact</a></li>
         </ul>
       </section>
@@ -118,39 +95,29 @@
       </div>
     </div>
     <div class="footer">
-      <div class="flexcontainer">
-          <img id="logo" src="./Dean/assets/images/logo_hendriks_white.png">
-          <div id="contact" class="content">
-                  <h2>
-                      Contact
-                  </h2>
-              <div class="flexinflex">   
-                  <div>
-                      <h4 class="text">Telefoon:</h4>
-                      <h4 class="text">E-Mail:</h4>
-                      <h4 class="text">Adress:</h4>
-                  </div> 
-                  <div>
-                      <h4>06 12345678</h4>
-                      <h4>henderik@hogendijkhoveniers.nl</h4>
-                      <h4>Hoefstraat 42, 7143HH, Huis Ter Heide</h4>
-                  </div>
-              </div>
-          </div>
-          <div id="socialmedia" class="content">
-              <h2>Social Media</h2>
-              <div class="flexinflex">   
-                  <div>
-                      <h4 class="text"><a class="link" href="https://www.twitter.com"><img id="twitt" src="./Rozz/assets/img/tweet.png">&nbsp;Twitter:</h4></a>
-                      <h4 class="text"><a class="link" href="https://www.instagram.com"><img id="twitt" src="./Rozz/assets/img/instagram.svg">&nbsp;Instagram:</h4>
-                      <h4 class="text"> <a class="link" href="https://www.facebook.com"><img id="twitt" src="./Rozz/assets/img/facebook.png">&nbsp;Facebook:</h4>
-                  </div> 
-                  <div>
-                      <h4>@HHHoveniers</h4>
-                      <h4>@HendericksHogendijkHoveniers</h4>
-                      <h4>HhogendijkHoveniers</h4>
-                  </div>
-              </div>
+      <div class="footer-wrapper">
+        <div class="nav-footer">
+          <p>Navigatie</p>
+          <a href="index.html">Home</a> <br />
+          <a href="projects3.html">Projects</a> <br />
+          <a href="contactalt.html">Contact</a> <br />
+        </div>
+        <div class="contact-footer">
+          <p class="h-contact">Contact info</p>
+          <br />
+          <p class="material-symbols-outlined">mail</p>
+          <p class="tekst-contact">hendrikhogendijkhoveniers@gmail.com<p>
+          <br />
+          <p class="material-symbols-outlined">call</p>
+          <p class="tekst-contact">+00 000 0000000<p></p>
+          <br />
+          <p class="material-symbols-outlined">location_on</p>
+          <p class="tekst-contact">Hoefstraat 42 7143HH Huis Ter Heide<p></p>
+        </div>
+        <div class="logo-footer">
+          <img class="logo-footer-img" src="Dean/assets/images/logo_hendriks_white.png" alt="">
+        </div>
+      </div>
             <script src="Slideshow/slideshow.js"></script>    
           </div>
         </div>

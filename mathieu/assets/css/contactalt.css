@@ -8,12 +8,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 #kaartje {
-border: 1px solid black;
+/* border: 10px solid black; */
 height: 480px;
-width: 485px;
+width: 40%;
 background-color: #20525c;
 padding: 10px;
 color: white;
@@ -23,7 +24,7 @@ color: white;
 #contactform {
 /* border: 1px solid black; */
 height: 500px;
-width: 800px;
+width: 40%;
 
 
 }
@@ -43,14 +44,15 @@ width: 800px;
 
 #namemail {
     display: flex;
+    width: 93%;
 }
-#naame {
-    height: 100px;
-    width: 300px;
+ #naame { 
+    width: 50%;
+    
 }
-#achtername {
-    height: 100px;
-    width: 300px;
+#achtername { 
+    width: 50%;
+    
 }
 #emaile {
     height: 100px;
@@ -61,11 +63,13 @@ width: 800px;
 }
 #naam {
     width: 90%;
+    height: 50px;
 }
 #anaam {
-    width: 100%;
+    width: 90%;
+    height: 50px;
 }
-#onderwerp {
+#email {
     width: 90%;
     height: 50px;
 }
@@ -73,3 +77,53 @@ width: 800px;
     width: 90%;
     height: 100px;
 }
+
+#binnen {   
+    /* border: 10px black solid; */
+    height: 250px;
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #20525c;
+    color: white;
+    
+
+}
+#flexcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+
+}
+
+@media only screen and (max-width: 870px){
+    #box{
+        display: flex;
+        flex-direction: column;
+    }
+    #contactform {
+        height: 500px;
+        width: 80%;
+    }
+    #kaartje {
+        width: 80%;
+        order: 1;
+    }
+
+    #naam {
+        width: 180%;
+        height: 50px;
+    }
+    #anaam {
+        width: 180%;
+        height: 50px;
+        
+    }
+    #namemail {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
