@@ -1,4 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto:ital@1&display=swap");
 
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+    color: white;
+    margin-bottom: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #20525c;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 95px;
+    height: 95px;
+    vertical-align: middle;
+    /* margin-top: -17px; */
+    margin-left: 25px;
+}
+
+.header ul {
+    /* display: inline-block; */
+    display: flex;
+    margin-right: 30px;
+}
+
+.header li {
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header li:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.headerimg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
 
 .inleiding {
     display: flex;
@@ -33,34 +99,6 @@
 }
 
 
-
-.footer {
-    width: 100%;
-    height: 250px;
-    background-color: rgb(81, 81, 85);
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    line-height: 50px;
-}
-
-.nav h2 {
-    color: #54c2cc;
-}
-
-.nav {
-    margin-left: 20px;
-    padding: 20px;
-    width: 20%;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-}
-
 .left-main {
     width: 40%;
     /* height: 200px; */
@@ -79,7 +117,7 @@
 
 .main {
     background-color: #00000008;
-    height: 400px;
+    height: auto;
     width: 100%;
     margin-top: 10px;
     display: flex;
@@ -90,16 +128,13 @@
     /* width: 50%; */
 }
 
-.contact-button {
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    margin-top: 30px;
-    cursor: pointer;
-    background-color: #dfe667;
+.contact-a{
+    color: #20525c;
 }
-
+.contact-a:hover{
+    color: #20525c;
+    text-decoration: underline;
+}
 .projects {
     width: 100%;
     height: auto;
@@ -161,52 +196,15 @@ a {
 .contact p:hover{
     text-decoration: underline;  
 } */
-.footer {
+/* .footer {
     display: flex;
     justify-content: center;
     height: auto;
 }
 
-.contact {
-    margin-top: 20px;
-}
-
-.contact h2 {
-    color: #54c2cc;
-}
-
-.contact-icons {
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-}
-
-.contact-titles {
-    font-size: 25px;
-}
-
-.content-img {
-    width: 100px;
-    height: 100px;
-    margin-top: 60px;
-    margin-left: 40px;
-}
 
 
-
-/* max-width 450px */
-@media only screen and (max-width: 450px) {
-    .left {
-        margin-top: 0px;
-    }
-
-    .inleiding-img {
-        width: 100%;
-        height: 300px;
-        margin-left: 0px;
-    }
-}
-
-/* header */
+/* burger */
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 h2 {
@@ -230,8 +228,6 @@ body {
     color: #fff;
     height: 80px;
     padding: 1em;
-    position: sticky;
-    top: 0;
 }
 
 .menu {
@@ -297,41 +293,140 @@ body {
     transform: rotate(-405deg);
 }
 
+.left-container {}
+
 .logo-head {
     width: 80px;
-    height: 80p
-}
-.header {
-    width: 100%;
-    height: auto;
-    background-color: #20525c;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
+    height: 80px;
 }
 
-.header img {
-    width: 95px;
-    height: 95px;
-    vertical-align: middle;
-    /* margin-top: -17px; */
-    margin-left: 25px;
-}
+@media only screen and (max-width: 1024px) {
+    .right-wrapper-omgeving{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .omgeving {
+        width: 100%;
+        height: auto;
+        background-color: #00000008;
+        display: flex;
+        flex-direction: column;
 
-.header ul {
-    /* display: inline-block; */
-    display: flex;
-    margin-right: 30px;
-}
+    }
+    .left-omgeving {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        order: 2;
+        margin-left: 20PX;
+    }
+    
+    .right-omgeving {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        order: 1;
+    }
+    .left {
+        width: 95%;
+        height: auto;
+        order: 2;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .right {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        order: 1;
+        text-align: center;
+    }
 
-.header li {
-    padding: 10px;
-    list-style: none;
-    font-size: 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    .wrapper {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .inleiding {
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    .inleiding-img {
+        width: 100%;
+        height: 600px;
+        margin-left: 0px;
+    }
+
+    /* .left-main {
+          width: 100%;
+          height: 200px;
+          margin-top: 25px;
+      }
+  
+      .right-main {
+          width: 100%;
+          height: 200px;
+          margin-top: 25px;
+      }
+  
+      .main {
+          background-color: #00000008;
+          height: auto;
+          width: 100%;
+          flex-direction: column;
+      } */
+
+    /* main */
+    .contact-img {
+        width: 100%;
+        margin-bottom: 200px;
+        height: auto;
+        
+    } 
+    .left-main {
+        width: calc(50% - 20px);
+        height: 200px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    .left-container {
+        width: calc(100% - 20px);
+    }
+
+    .right-container {
+        width: calc(100% - 20px);
+    }
+
+    .right-main {
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
+    }
+
+    .right-container {
+        margin-left: 20px;
+        width: calc(100% - 20px);
+        margin-left: 20px;
+
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
 }
 
 .header li:hover {
@@ -363,7 +458,7 @@ body {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 410px;
+        margin-top: 365px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -393,7 +488,7 @@ body {
         padding: 0.5em 0;
         width: 100%;
         color: white;
-        background-color: #20525c ;
+        background-color: #20525c;
     }
 
     .menu>li:not(:last-child) {
