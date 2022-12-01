@@ -34,6 +34,7 @@
           <div class="menu-button"></div>
         </label>
         <ul class="menu">
+          <li><a class="onpage" href="index.html"> Home</a></li>
           <li><a href="projects3.html"> Projects</a></li>
           <li><a href="review2.html"> Reviews</a></li>
           <li><a href="contactalt.html"> Contact</a></li>
@@ -91,11 +92,44 @@
               </p>
             </div>
             <div class="right">
-              <img
-                class="inleiding-img"
-                src="Dean/assets/images/hendrik.png"
-                alt=""
-              />
+              <div class="projects">
+                <div id="slider">
+                  <div id="dots-con">
+                    <span class="dot"></span><span class="dot"></span
+                    ><span class="dot"></span><span class="dot"></span>
+                  </div>
+                  <div class="slide" style="background: dodgerBlue">
+                    <img src="Krijn/assets/img/photo7.jpg" />
+                  </div>
+        
+                  <div class="slide" style="background: coral">
+                    <img src="Krijn/assets/img/photo11.jpg" />
+                  </div>
+        
+                  <div class="slide" style="background: crimson">
+                    <img src="Krijn/assets/img/photo12.jpg" />
+                  </div>
+        
+                  <div class="slide" style="background: #6edf10">
+                    <img src="Krijn/assets/img/photo13.jpg" />
+                  </div>
+        
+                  <!-- Controlling arrows -->
+                  <span class="controls" onclick="prevSlide(-1)" id="left-arrow"
+                    ><span class="material-symbols-outlined"> arrow_back </span
+                    ><i class="fa fa-arrow-left" aria-hidden="true"></i>
+                  </span>
+                  <span class="controls" id="right-arrow" onclick="nextSlide(1)"
+                    ><span class="material-symbols-outlined"> arrow_forward </span
+                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div id="dots-con">
+                  <span class="dot"></span><span class="dot"></span
+                  ><span class="dot"></span><span class="dot"></span>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -113,37 +147,7 @@
       </div>
 
       <div class="projects">
-        <div id="slider">
-          <div class="slide" style="background: dodgerBlue">
-            <img src="Krijn/assets/img/photo7.jpg" />
-          </div>
-
-          <div class="slide" style="background: coral">
-            <img src="Krijn/assets/img/photo11.jpg" />
-          </div>
-
-          <div class="slide" style="background: crimson">
-            <img src="Krijn/assets/img/photo12.jpg" />
-          </div>
-
-          <div class="slide" style="background: #6edf10">
-            <img src="Krijn/assets/img/photo13.jpg" />
-          </div>
-
-          <!--Controlling arrows-->
-          <span class="controls" onclick="prevSlide(-1)" id="left-arrow"
-            ><span class="material-symbols-outlined"> arrow_back </span
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i>
-          </span>
-          <span class="controls" id="right-arrow" onclick="nextSlide(1)"
-            ><span class="material-symbols-outlined"> arrow_forward </span
-            ><i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </span>
-        </div>
-        <div id="dots-con">
-          <span class="dot"></span><span class="dot"></span
-          ><span class="dot"></span><span class="dot"></span>
-        </div>
+       <img src="Dean/assets/images/hendrik.png" alt="">
       </div>
       <div class="omgeving">
         <div class="left-omgeving">
@@ -187,7 +191,7 @@
       </div> -->
       <script src="Slideshow/slideshow.js"></script>
     </div>
-     <div class="footer">
+    <div class="footer">
       <div class="footer-wrapper">
         <div class="nav-footer">
           <p>Navigatie</p>
@@ -199,17 +203,26 @@
           <p class="h-contact">Contact info</p>
           <br />
           <p class="material-symbols-outlined">mail</p>
-          <p class="tekst-contact">hendrikhogendijkhoveniers@gmail.com<p>
-          <br />
+          <p class="tekst-contact">hendrikhogendijkhoveniers@gmail.com</p>
+          <p>
+            <br />
+          </p>
+
           <p class="material-symbols-outlined">call</p>
-          <p class="tekst-contact">+31 06 12345678<p></p>
+          <p class="tekst-contact">+31 06 12345678</p>
+          <p></p>
           <br />
           <p class="material-symbols-outlined">location_on</p>
-          <p class="tekst-contact">Hoefstraat 42 7143HH Huis Ter Heide<p></p>
+          <p class="tekst-contact">Hoefstraat 42 7143HH Huis Ter Heide</p>
+          <p></p>
         </div>
         <div class="logo-footer">
-          <img class="logo-footer-img" src="Dean/assets/images/logo_hendriks_white.png" alt="">
-        </div<>
+          <img
+            class="logo-footer-img"
+            src="Dean/assets/images/logo_hendriks_white.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </body>
