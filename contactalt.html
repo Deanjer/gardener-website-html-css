@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="mathieu/assets/css/contactalt.css">
+    <link rel="stylesheet" href="Dean/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Contact</title>
 </head>
 <body>
+    <div class="container">
+        <div>
+          <img
+            class="headerimg"
+            src="Dean/assets/images/a8db60_9f168361c12f4ad5800e1acf22f49080_mv2.jpeg"
+            alt=""
+          />
+        </div>
+        <section class="top-nav">
+          <div>
+            <img
+              class="logo-head"
+              src="Dean/assets/images/logo_hendriks_white.png"
+              alt=""
+            />
+          </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li>Projects</li>
+            <li>Reviews</li>
+            <li>Contact</li>
+          </ul>
+        </section>
     <div id="content">
         <div id="tittle"><a>Kom in contact met ons!</a></div>
         <div id="box">
@@ -55,29 +84,55 @@
             </div>  
             <div id="contactform">
                 <div id="boxes">
-                    <form action="">
+                    <form action="wijnemencontactop.html" method="get">
                         <div id="namemail">
                             <div id="naame">
                                 <label for="naam">Naam:</label><br>
-                                <input type="text" id="naam" class="box" name="voornaam">
+                                <input type="text" id="naam" class="box" name="voornaam" min="1" max="30">
                             </div>
                             <div id="achtername">
                                 <label for="achternaam">Achternaam:</label><br>
-                                <input type="text" id="anaam" name="achternaam">
+                                <input type="text" id="anaam" name="achternaam" min="1" max="30">
                             </div>
                         </div>
                         <div id="emaile">
-                            <label for="onderwerp">Email:</label><br>
-                            <input type="email" id="onderwerp" name="onderwerp">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email">
                         </div>
                         <div id="berichte">
                         <label for="bericht">bericht:</label><br>
-                        <textarea id="bericht" name="bericht"></textarea>
+                        <textarea id="bericht" name="bericht" minlength="1" maxlength="4000"></textarea>
                         </div>
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="footer-wrapper">
+          <div class="nav-footer">
+            <p>Navigatie</p>
+            <a href="projects3.html">Projects</a> <br />
+            <a href="contact.html">Contact</a> <br />
+            <a href="review2.html">Review</a> <br />
+          </div>
+          <div class="contact-footer">
+            <p class="h-contact">Contact info</p>
+            <br />
+            <p class="material-symbols-outlined">mail</p>
+            <p class="tekst-contact">hendrikhogendijkhoveniers@gmail.com<p>
+            <br />
+            <p class="material-symbols-outlined">call</p>
+            <p class="tekst-contact">+00 000 0000000<p></p>
+            <br />
+            <p class="material-symbols-outlined">location_on</p>
+            <p class="tekst-contact">Hoefstraat 42 7143HH Huis Ter Heide<p></p>
+          </div>
+          <div class="logo-footer">
+            <img class="logo-footer-img" src="Dean/assets/images/logo_hendriks_white.png" alt="">
+          </div>
+        </div>
+   
 </body>
 </html>
