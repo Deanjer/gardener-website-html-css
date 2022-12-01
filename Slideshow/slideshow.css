@@ -17,7 +17,7 @@ body{
 	
   }
   img{
-   width:100%; 
+   /* width:100%;  */
    height: 300px;
   }
 
@@ -58,16 +58,20 @@ body{
 	
 	text-align:center;
   }
+
+  .slide img {
+	width: 100%;
+  }
   .dot{
 	display:inline-block;
-	background:grey;
+	/* background:grey; */
 	padding:8px;
 	border-radius:50%;
 	margin:10px 5px;
   }
   
   .active{
-	background:crimson;
+	/* background:crimson; */
   }
   
   @media (max-width:576px){
