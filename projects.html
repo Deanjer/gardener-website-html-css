@@ -6,28 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="/Rozz/assets/css/projects.css">
+    <link rel="stylesheet" href="Dean/assets/css/test.css">
 </head>
+<html>
 <body>
-    <div class="header">
-        <img src="Dean/assets/images/logo_hendriksv2.png" alt="">
-        <ul>
-            <li><a href="#">Projecten</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Reviews</a></li>
+    <section class="top-nav">
+        <div>
+          <img class="logo-head" src="Dean/assets/images/logo_hendriks_white.png" alt="">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li>Projects</li>
+          <li>Reviews</li>
+          <li>Contact</li>
         </ul>
-    </div>
+      </section>
     <div id="maincontainer">
         <div id="flexcontainer">
             <div class="projects" id="number1" onclick="gone1()">
                 <div class="flexinflex">
                     <div class="flexinflexinflex">
-                    <a href="#">
-                        <img id="img1" alt="nummer1" src="https://via.placeholder.com/150">
-                    </a>
+                        <a href="#">
+                            <img id="img1" src="./Rozz/assets/img/benchgarden2.jpg">
+                        </a>
+                        <div id="show1" class="show">
+                            hello!
+                        </div>
                     </div>
-                    <div id="hidden1" class="hiddenclass1">
-                        hello!
-                    </div>
+                        <div id="hidden1" class="hiddenclass1">
+                            hello!
+                        </div>
                 </div>
                 <div class="flexinflex2">
                     <div id="hidden2" class="hiddenclass2">
@@ -38,9 +49,12 @@
             <div class="projects" id="number2" onclick="gone2()">
                 <div class="flexinflex">
                     <div class="flexinflexinflex">
-                    <a href="#">
-                        <img id="img2" src="https://via.placeholder.com/150">
-                    </a>
+                        <a href="#">
+                            <img id="img2" src="./Rozz/assets/img/ezgif.com-gif-maker2.jpg">
+                        </a>
+                        <div id="show2" class="show">
+                            hello!
+                        </div>
                     </div>
                     <div id="hidden3" class="hiddenclass1">
                         hello!
@@ -55,9 +69,12 @@
             <div class="projects" id="number3" onclick="gone3()">
                 <div class="flexinflex">
                     <div class="flexinflexinflex">
-                    <a href="#">
-                        <img id="img1" src="https://via.placeholder.com/150">
-                    </a>
+                        <a href="#">
+                            <img id="img3" src="./Rozz/assets/img/ezgif.com-gif-maker2.png">
+                        </a>
+                        <div id="show3" class="show">
+                            hello!
+                        </div>
                     </div>
                     <div id="hidden5" class="hiddenclass1">
                         hello!
@@ -72,9 +89,12 @@
             <div class="projects" id="number4" onclick="gone4()">
                 <div class="flexinflex">
                     <div class="flexinflexinflex">
-                    <a href="#">
-                        <img id="img1" src="https://via.placeholder.com/150">
-                    </a>
+                        <a href="#">
+                            <img id="img4" src="./Rozz/assets/img/pondgarden2.jpg">
+                        </a>
+                        <div id="show4" class="show">
+                            hello!
+                        </div>
                     </div>
                     <div id="hidden7" class="hiddenclass1">
                         hello!
@@ -87,6 +107,43 @@
                 </div>
             </div>
             
+        </div>
+    </div>
+    <div class="footer">
+        <div class="flexcontainer">
+            <img id="logo" src="./Dean/assets/images/logo_hendriks_white.png">
+            <div id="contact" class="content">
+                    <h2>
+                        Contact
+                    </h2>
+                <div class="flexinflex">   
+                    <div>
+                        <h4 class="text">Telefoon:</h4>
+                        <h4 class="text">E-Mail:</h4>
+                        <h4 class="text">Adress:</h4>
+                    </div> 
+                    <div>
+                        <h4>06 12345678</h4>
+                        <h4>henderik@hogendijkhoveniers.nl</h4>
+                        <h4>Hoefstraat 42, 7143HH, Huis Ter Heide</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="socialmedia" class="content">
+                <h2>Social Media</h2>
+                <div class="flexinflex">   
+                    <div>
+                        <h4 class="text"><a class="link" href="https://www.twitter.com"><img id="twitt" src="./Rozz/assets/img/tweet.png">&nbsp;Twitter:</h4></a>
+                        <h4 class="text"><a class="link" href="https://www.instagram.com"><img id="insta" src="./Rozz/assets/img/instagram.svg">&nbsp;Instagram:</h4>
+                        <h4 class="text"> <a class="link" href="https://www.facebook.com"><img id="face" src="./Rozz/assets/img/facebook.png">&nbsp;Facebook:</h4>
+                    </div> 
+                    <div>
+                        <h4>@HHHoveniers</h4>
+                        <h4>@HendericksHogendijkHoveniers</h4>
+                        <h4>HhogendijkHoveniers</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

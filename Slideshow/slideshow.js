@@ -1,44 +1,42 @@
-let options = {
-	'speed': 8000,
-	'pause': true,
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var index = 0;
+
+
+function prevSlide(n){
+  index+=n;
+  console.log("prevSlide is called");
+  changeSlide();
 }
 
-window.addEventListener('DOMContentLoaded', function() {
-	let slider = document.querySelector('.rbd-review-slider');
-	let slides = slider.querySelectorAll('.rbd-review');
-	let total  = slides.length;
-	let pause  = false;
-	
-	function pauseSlide(){
-		slider.onmouseleave = function(){ pause = false; };
-		slider.onmouseenter = function(){ pause = true; };
-		return pause;
-	}
-	
-	function slide(){
-		if( options.pause && pauseSlide() ) return;
-		
-		let activeSlide = document.querySelector('.rbd-review-slider .rbd-review.rbd-curr');
-		let prev, curr, next, soon;		
-		
-		curr = activeSlide;
-		prev = activeSlide.previousElementSibling;
-		next = activeSlide.nextElementSibling;
-		
-		if( next != null ){
-			soon = next.nextElementSibling == null ? slides[0] : next.nextElementSibling;
-		} else {
-			next = slides[0];
-			soon = slides[1];
-		}
-		
-		if( prev != null ) prev.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next');
-		if( curr != null ) curr.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); curr.classList.add('rbd-prev');
-		if( next != null ) next.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); next.classList.add('rbd-curr');
-		if( soon != null ) soon.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); soon.classList.add('rbd-next');
-	}
-	
-	let slideTimer = setInterval(function(){
-		slide();
-	}, options.speed);
-}, true);
+function nextSlide(n){
+  index+=n;
+  changeSlide();
+}
+
+changeSlide();
+
+function changeSlide(){
+    
+  if(index>slides.length-1)
+    index=0;
+  
+  if(index<0)
+    index=slides.length-1;
+  
+  
+  
+    for(let i=0;i<slides.length;i++){
+      slides[i].style.display = "none";
+      
+      dots[i].classList.remove("active");
+      
+      
+    }
+    
+    slides[index].style.display = "block";
+    dots[index].classList.add("active");
+
+  
+
+}

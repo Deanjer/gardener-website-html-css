@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/Rozz/assets/css/projects.css">
+    <link rel="stylesheet" href="/Dean/assets/css/test.css">
+    <link rel="stylesheet" href="slideshow/slideshow.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<html>
+    <body>
+        <div id="slider">  
+            <div class="slide" style="background:dodgerBlue;">
+              <img src="Krijn/assets/img/photo7.jpg" >
+            </div>
+            
+            <div class="slide" style="background:coral;">
+               <img src="Krijn/assets/img/photo11.jpg" >
+            </div>
+           
+            <div class="slide" style="background:crimson;">
+              <img src="Krijn/assets/img/photo12.jpg" >
+            </div>
+            
+            <div class="slide" style="background: #6edf10;">
+              <img src="Krijn/assets/img/photo13.jpg" >
+            </div>
+            
+            <!--Controlling arrows-->
+            <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><span class="material-symbols-outlined">
+              arrow_back
+              </span><i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </span>
+            <span class="controls" id="right-arrow" onclick="nextSlide(1)"><span class="material-symbols-outlined">
+              arrow_forward
+              </span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </span>
+          </div>
+            <div id="dots-con">
+           <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+           </div>
+          
+                <script src="Slideshow/slideshow.js"></script>
+        <section class="top-nav">
+            <div>
+              <img
+                class="logo-head"
+                src="Dean/assets/images/logo_hendriks_white.png"
+                alt=""
+              />
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <div class="menu-button"></div>
+            </label>
+            <ul class="menu">
+              <li><a href=""> Projects</a></li>
+              <li><a href=""> Reviews</a></li>
+              <li><a href=""> Contact</a></li>
+            </ul>
+          </section>
+          <div id="maincontainer">
+            <div class="flexcontainer">
+                <a href="./project1.html" class="link"><div class="projects">
+                    <div class="flexinflex">
+                        <div class="flexinflexinflex">
+                            <img id="img1" src="./Rozz/assets/img/benchgarden2.jpg">
+                            <div class="show">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto hic aperiam minus consectetur! Consectetur consequatur quae incidunt a, earum eligendi nihil harum vero, nisi, repellat ad autem omnis repudiandae dignissimos?
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta beatae totam inventore aspernatur dolore enim eius, est pariatur a, illo voluptatum laborum eveniet accusantium vero ea neque deleniti suscipit excepturi?
+                            </div>
+                    </div></a>
+                </div>
+            </div>
+    </body>
+</html>

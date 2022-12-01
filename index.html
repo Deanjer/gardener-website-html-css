@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="Slideshow/slideshow.css">
   </head>
   <body>
     <div class="container">
@@ -33,9 +34,11 @@
           <div class="menu-button"></div>
         </label>
         <ul class="menu">
-          <li>Projects</li>
-          <li>Reviews</li>
-          <li>Contact</li>
+
+          <li><a href="projects.html"> Projects</a></li>
+          <li><a href="review2.html"> Reviews</a></li>
+          <li><a href="contact.html"> Contact</a></li>
+
         </ul>
       </section>
 
@@ -45,34 +48,54 @@
             <div class="left">
               <h2>Hendrik Hogendijk hovenier</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                incidunt asperiores explicabo maiores saepe quod qui. Error,
-                nulla. Laborum praesentium assumenda aliquam vel. Aliquam unde,
-                soluta dignissimos non impedit culpa. Veniam, autem recusandae
-                officiis corrupti nobis repudiandae velit quo! Commodi esse
-                facilis nam itaque sunt! Sed labore odit cupiditate ipsum,
-                distinctio vero autem, impedit, modi aut sunt laborum ab error?
-                Suscipit rem eveniet sequi vitae. Vel, quia. Eius sequi nesciunt
-                perferendis nobis laboriosam esse vero quas obcaecati tempora
-                soluta molestiae facilis architecto consectetur magnam modi
-                suscipit ea laborum, itaque minus.
+                Welkom bij de website van Hendrik Hogendijk, hovenier in de
+                regio Utrecht, Zeist en de Bilt.
               </p>
               <br />
               <p>
-                Repellat qui eum eos dolorem odio accusantium nam aspernatur
-                error nulla aliquid illo nihil iusto atque temporibus voluptate
-                reiciendis ducimus perferendis corrupti voluptas sapiente, id
-                fugiat alias porro? Autem, distinctio! Enim, eaque maxime?
-                Dolorem repellendus quo nisi iusto dolorum, blanditiis vitae
-                enim quia suscipit! Repellendus, iste assumenda natus molestias
-                illum accusamus, et porro rerum culpa harum illo voluptate dicta
-                a.
+                De tuin is een belangrijke plek van de woning, waar je het
+                liefst zoveel mogelijk tijd in doorbrengt. Bij Hendrik Hogendijk
+                Hoveniers vinden wij het daarom belangrijk dat iedereen zich
+                thuis voelt in zijn of haar tuin. Ik maak de tuin onderdeel van
+                jouw ‘thuis’, door hem volledig op jouw wensen af te stemmen.
+              </p>
+              <br />
+              <p>
+                Met behulp van mooie, natuurlijke en duurzame producten en
+                materialen creëer ik een tuin, die garant staat voor een
+                jarenlang plezierig buitenleven. Van een knusse veranda en een
+                mooie vijver, tot een gezellig terras en een kleurrijke
+                bloemenborder: ik stop al mijn energie erin.
+              </p>
+              <p></p>
+              <h2>Ontwerp</h2>
+              <br />
+              <p>
+                Wat jouw wensen ook zijn, ik maak een goed doordacht ontwerp
+                voor de tuin van je dromen. Met mijn ontwerp krijg je een
+                duidelijk beeld van jouw toekomstige tuin.
+              </p>
+
+              <h2>Aanleg</h2>
+              <br />
+              <p>
+                Van tuinontwerp naar jouw gewenste tuin. Wij verzorgen de aanleg
+                met een goed voorbereid plan. Met een kritisch oog en precisie
+                leg ik de tuin voor je aan.
+              </p>
+
+              <h2>Onderhoud</h2>
+              <br />
+              <p>
+                Om het hele jaar door optimaal te genieten van jouw tuin is het
+                belangrijk dat deze goed onderhouden wordt. Ik neem je graag
+                deze zorg uit handen.
               </p>
             </div>
             <div class="right">
               <img
                 class="inleiding-img"
-                src="Dean/assets/images/a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp"
+                src="Dean/assets/images/hendrik.png"
                 alt=""
               />
             </div>
@@ -80,99 +103,83 @@
         </div>
       </div>
       <div class="main">
-        <div class="left-main">
-          <img
-            class="contact-img"
-            src="https://via.placeholder.com/250x250"
-            alt=""
-          />
-        </div>
         <div class="right-main">
-          <div class="right-container">
+          <div class="right-container-omgeving">
             <h2>Contact</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-              vero, tempora vel consectetur ea molestiae necessitatibus nihil
-              nobis assumenda ullam maxime incidunt! Quis quos quas
-              reprehenderit asperiores? Unde, debitis officiis!
+              Als je vragen hebt of gewoon contact wil leggen dan kan dat via
+              <a class="contact-a" href="contact.html"> hier!</a>
             </p>
-            <button class="contact-button">Contact</button>
+          
           </div>
         </div>
       </div>
 
       <div class="projects">
-        <div class="cards">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+        <div id="slider">  
+          <div class="slide" style="background:dodgerBlue;">
+            <img src="Krijn/assets/img/photo7.jpg" >
+          </div>
+          
+          <div class="slide" style="background:coral;">
+             <img src="Krijn/assets/img/photo11.jpg" >
+          </div>
+         
+          <div class="slide" style="background:crimson;">
+            <img src="Krijn/assets/img/photo12.jpg" >
+          </div>
+          
+          <div class="slide" style="background: #6edf10;">
+            <img src="Krijn/assets/img/photo13.jpg" >
+          </div>
+          
+          <!--Controlling arrows-->
+          <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><span class="material-symbols-outlined">
+            arrow_back
+            </span><i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </span>
+          <span class="controls" id="right-arrow" onclick="nextSlide(1)"><span class="material-symbols-outlined">
+            arrow_forward
+            </span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </span>
         </div>
+          <div id="dots-con">
+         <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+         </div>
+        
+              
       </div>
       <div class="omgeving">
         <div class="left-omgeving">
-          <h2>Lorem ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit esse
-            cupiditate assumenda id, blanditiis quo corporis! Magnam eveniet vel
-            eum voluptates. Quam, libero dolor. Voluptate fuga rerum harum
-            consequuntur dolorem. Non consequuntur ut dolore soluta velit
-            laudantium amet, explicabo corporis neque, corrupti totam recusandae
-            porro incidunt, id dignissimos magni nihil sapiente labore! Nihil
-            numquam atque expedita beatae soluta vel optio. Aspernatur
-            architecto reiciendis ad, doloremque consequatur similique,
-            inventore quibusdam corporis autem amet corrupti magnam! Iure quae,
-            suscipit laudantium distinctio tenetur dolores qui quidem non,
-            aliquam reprehenderit repellat neque, vero amet. Labore corrupti
-            consectetur maiores molestiae omnis accusamus voluptatem hic. Odio
-            ipsum quis necessitatibus ad, eligendi, rerum enim aperiam hic cum
-            est quod iusto recusandae maxime, nulla provident minus ab!
-            Praesentium.
+          <h2>Diensten</h2>
+
+          
+           <b> <p>Tuinontwerp</p> </b> <p>Een mooie tuin valt of staat bij een goed tuinontwerp.
+            Als het op ontwerpen aankomt, maakt Hendrik Hogendijk het verschil.
+          </p> <br>
+          <b> <p>Tuinaanleg</p> </b> <p>
+            Het aanleggen van een tuin doen ik altijd vanuit dezelfde drive: ik wil er iets moois van maken. 
+          </p> <br>
+          <b> <p>Tuinonderhoud</p> </b> <p>
+            Een mooie tuin verdient het juiste onderhoud. Immers, goed onderhoud is een essentiële voorwaarde voor een tuin die het hele jaar door mooi blijft.
+          </p> <br>
+          <b> <p>Zwemvijvers</p> </b> <p>
+            Zwemvijvers, is één van mjn grootste passies. En gelukkig, ze winnen aan steeds meer populariteit, waardoor ik er veel ervaring mee heb opgebouwd..
           </p>
         </div>
+        <div class="right-wrapper">
         <div class="right-omgeving">
-          <img
-            class="img-omgeving"
-            src="https://via.placeholder.com/250x250"
-            alt=""
-          />
+         
+        </div>
         </div>
       </div>
       <div class="footer">
-        <div class="nav">
-          <h2>Navigeren:</h2>
-          <a href="#">Projecten</a>
-          <a href="#">Contact</a>
-          <a href="#">Reviews</a>
-        </div>
-        <div class="contact">
-          <h2>Contact:</h2>
-          <br />
-          <span class="material-symbols-outlined">
-            phone_enabled
-            <span class="contact-icons"> +00 00 0000000</span> </span
-          ><br />
-          <span class="material-symbols-outlined">
-            mail
-            <span class="contact-icons"
-              >hendrikhogendijkhoveniers@gmail.com</span
-            >
-          </span>
-          <br />
-          <span class="material-symbols-outlined">
-            location_on
-            <span class="contact-icons"
-              >Hoefstraat 42 7143HH Huis Ter Heide</span
-            >
-          </span>
-          <div>
-            <img
-              class="content-img"
-              src="Dean/assets/images/logo_hendriks_white.png"
-              alt=""
-            />
-          </div>
+        <div class="footer-wrapper">
+          <div class="contact"></div>
+          <div class="navigation"></div>
         </div>
       </div>
+      <script src="Slideshow/slideshow.js"></script>
     </div>
   </body>
 </html>
