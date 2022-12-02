@@ -61,6 +61,7 @@ body{
 
   .slide img {
 	width: 100%;
+	z-index: -1;
   }
   .dot{
 	display:inline-block;
